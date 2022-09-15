@@ -23,10 +23,10 @@ a {
     text-decoration: none;
 }
 header {
-    width: 1920px;
-    height: 360px;
+    width: 100vw;
+    height: 33vh;
     background-image: url("./img/header background.jpg");
-    background-size: 100%;
+    background-size: cover;
 }
 article {
     border: 2px solid;

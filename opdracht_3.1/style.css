@@ -8,6 +8,16 @@ html {
 }
 body {
   font-family: "Goldman", cursive;
+  position: relative;
+  min-height: 100vh;
+  
+}
+
+.left {
+  float: left;
+}
+.right {
+float: right;
 }
 
 nav {
@@ -20,6 +30,7 @@ nav {
   margin: auto;
   background: #00a8c7;
   justify-content: space-between;
+  position: fixed;
 }
 nav ul {
   display: flex;
@@ -42,20 +53,35 @@ html {
   background-color: black
 }
 
-html {
-  background-image: url();
-  width: 100%;
-}
-
 footer { 
-  background-color: #00a8c7
+  background-color: #00a8c7;
+  min-height:50px;
+  bottom: 0;
+  text-align: center;
+  padding-top: 20px;
 }
 
 h1 {
   font-family: "Goldman", cursive;
   font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 p {
   font-family: "Goldman", cursive;
+  color: #FFFFFF;
 }
+
+section { 
+  width: 50vw;
+  height: 20vh;
+}
+
+header{ 
+  min-height:50px; 
+}
+
+
+
+

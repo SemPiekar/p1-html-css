@@ -12,45 +12,107 @@
   </head>
   <body>
     <form>
-      <label for="fname">First name:</label><br />
-      <input type="text" id="fname" name="fname" /><br />
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" /><br />
-      <label for="pwd">Password:</label><br />
-      <input type="password" id="pwd" name="pwd" /><br />
-      <input type="radio" id="Man" name="gender" value="Man" checked />
-      <label for="Man">Man</label><br />
-      <input type="radio" id="Woman" name="gender" value="Woman" />
-      <label for="Woman">Woman</label><br />
-      <label for="address">Address:</label><br />
-      <input type="text" id="address" name="address" /><br />
-      <label for="postal code">Postal code:</label><br />
-      <input type="text" id="postal code" name="postal code" /><br />
-      <label for="land">Land:</label><br />
-      <input type="text" id="land" name="land" /><br />
-      <label for="bsn">BSN:</label><br />
-      <input type="number" id="bsn" name="bsn" /><br />
-      <input type="radio" id="America" name="travel" value="America" />
-      <label for="America">America</label><br />
-      <input type="radio" id="China" name="travel" value="China" />
-      <label for="China">China</label><br />
-      <label for="arrival">Date of arrival:</label><br />
-      <input type="date" id="arrival" name="arrival" min="2022-09-13" /><br />
-      <label for="return">Date of return:</label><br />
-      <input type="date" id="return" name="return" /><br />
-      <label for="persons">Persons (between 1 and 4):</label><br />
-      <input
-        type="number"
-        id="persons"
-        name="persons"
-        min="1"
-        max="4"
-      /><br /><br />
-      <input type="submit" value="Boek nu" /><br /><br />
-      <label for="email">Enter your email:</label><br />
-      <input type="email" id="email" name="email" /><br />
-      <label for="pwd">Password:</label><br />
-      <input type="password" id="pwd" name="pwd" /><br />
+      <div>
+        <label for="fname">First name:</label>
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          pattern="[A-Za-z]+Z$"
+          required
+        />
+      </div>
+      <div>
+        <label for="lname">Last name:</label>
+        <input
+          type="text"
+          id="lname"
+          name="lname"
+          pattern="[A-Za-z]+Z$"
+          required
+        />
+      </div>
+      <div>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" required />
+      </div>
+      <div>
+        <input type="radio" id="Man" name="gender" value="Man" checked />
+        <label for="Man">Man</label>
+        <input type="radio" id="Woman" name="gender" value="Woman" />
+        <label for="Woman">Woman</label>
+      </div>
+      <div>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required />
+      </div>
+      <div>
+        <label for="postal code">Postal code:</label>
+        <input type="text" id="postal code" name="postal code" required />
+      </div>
+      <div>
+        <label for="land">Land:</label>
+        <input type="text" id="land" name="land" required />
+      </div>
+      <div>
+        <label for="bsn">BSN:</label>
+        <input
+          type="text"
+          id="bsn"
+          name="bsn"
+          minlength="9"
+          maxlength="9"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="America"
+          name="travel"
+          value="America"
+          required
+        />
+        <label for="America">America</label>
+        <input type="radio" id="China" name="travel" value="China" required />
+        <label for="China">China</label>
+      </div>
+      <div>
+        <label for="arrival">Date of arrival:</label>
+        <input
+          type="date"
+          id="arrival"
+          name="arrival"
+          min="2022-09-15"
+          required
+        />
+      </div>
+      <div>
+        <label for="return">Date of return:</label>
+        <input type="date" id="return" name="return" required />
+      </div>
+      <div>
+        <label for="persons">Persons (between 1 and 4):</label>
+        <input
+          type="number"
+          id="persons"
+          name="persons"
+          min="1"
+          max="4"
+          required
+        />
+      </div>
+      <div>
+        <input type="submit" value="Boek nu" />
+      </div>
+      <div>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pwd" required />
+      </div>
     </form>
   </body>
 </html>
