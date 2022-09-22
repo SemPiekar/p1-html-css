@@ -30,21 +30,12 @@
     .header_2 {
       background-color: LIGHTblue;
     }
-  }
-
-@media only screen and (max-width: 600px) {
     .title_1 {
       background-color: blue;
     }
-  }
-
-@media only screen and (max-width: 600px) {
     .title_2 {
       background-color: magenta;
     }
-  }
-
-@media only screen and (max-width: 600px) {
     .title_3 {
       background-color: darkblue;
     }
@@ -54,23 +45,13 @@
     .header_2 {
       background-color: pink;
     }
-  }
-
-@media only screen and (max-width: 800px) and (min-width: 600px) {
     .title_1 {
       background-color: crimson;
     }
-  }
-
-@media only screen and (max-width: 800px) and (min-width: 600px) {
     .title_2 {
       background-color: blueviolet;
     }
-  }
-
-@media only screen and (max-width: 800px) and (min-width: 600px) {
     .title_3 {
       background-color: plum;
     }
   }
-
