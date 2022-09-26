@@ -27,6 +27,8 @@ header {
     height: 33vh;
     background-image: url("./img/header background.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 article {
     border: 2px solid;
