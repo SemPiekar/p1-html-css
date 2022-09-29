@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color: #131c27;
+  --color1: #4c6e97;
+  --color2: #ffffff;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Begin nav */
+.navbar {
+  width: 100%;
+  background-color: var(--color);
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em 0;
+}
+li a {
+  text-decoration: none;
+  color: var(--color3);
+  padding-right: 7.5em;
+  position: relative;
+  font-size: 2rem;
+}
+li:first-child {
+  margin-right: auto;
+  margin-left: 3em;
+  font-family: "Pattaya", sans-serif;
+}
+.header {
+  text-align: center;
+  width: 100%;
+  padding-top: 5em;
+  font-weight: bold;
+  font-size: xx-large;
+}
+.p {
+  text-align: center;
+  width: 100%;
+  padding-top: 2em;
+  font-weight: bold;
+  font-size: x-large;
+}
+.landing_page {
+  background-image: url(/opdracht_9/img/landing-page.jpg);
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+button {
+  padding: 2rem 6rem;
+  margin-top: 5rem;
+  font-size: 2rem;
+  background-color: var(--color1);
+  border: none;
+  color: var(--color2);
+}
+.btn {
+  text-align: center;
+}
+.new_york {
+  background-image: url(/opdracht_9/img/new-york-page.png);
+  background-color:rgba(0,0,0,0.2);
+  background-size: contain;
+  color: white;
+  height: 100vh;
+
+}
+.ny_header {
+  font-weight: 800;
+  color: var(--color2);
+  border-bottom: 0.8rem solid;
+  font-size: 6rem;
+  padding-top: 2em;
+  
+}
+.ny_text {
+  padding-top: 3em;
+  color: var(--color2);
+  font-size: 2.5rem;
+}
+.ny_text, .ny_header {
+  margin-left: 2em;
+}
+.section {
+  height: 30vh;
+  background-color: var(--color);
+}
+.header_3, .text_3 {
+  text-align: center;
+}
+.header_3 {
+  font-size: 4rem;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+.text_3{
+  font-size: 3rem;
+}
