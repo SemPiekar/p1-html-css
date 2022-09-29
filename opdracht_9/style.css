@@ -132,6 +132,7 @@ button {
   margin: 0 6em 6em 6em;
   background-color: white;
   color: var(--color);
+  text-align: center;
 }
 .text1,
 .section3 {
@@ -141,4 +142,20 @@ button {
   padding-top: 1em;
   width: 5rem;
   height: 5rem;
+}
+.header_travel {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+.text_travel {
+  font-size: 2rem;
+  padding: 4rem 1rem 0 1rem;
+}
+.all {
+  display: flex;
+  justify-content: space-around;
+}
+.last {
+  background-image: url(/opdracht_9/img/contact-mountain.png);
+  background-size: cover;
 }
