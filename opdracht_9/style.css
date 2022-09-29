@@ -76,11 +76,10 @@ button {
 }
 .new_york {
   background-image: url(/opdracht_9/img/new-york-page.png);
-  background-color:rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   background-size: contain;
   color: white;
   height: 100vh;
-
 }
 .ny_header {
   font-weight: 800;
@@ -88,28 +87,58 @@ button {
   border-bottom: 0.8rem solid;
   font-size: 6rem;
   padding-top: 2em;
-  
 }
 .ny_text {
   padding-top: 3em;
   color: var(--color2);
   font-size: 2.5rem;
 }
-.ny_text, .ny_header {
+.ny_text,
+.ny_header {
   margin-left: 2em;
 }
 .section {
   height: 30vh;
   background-color: var(--color);
 }
-.header_3, .text_3 {
+.header_3,
+.text_3 {
   text-align: center;
+  padding: 1rem 35rem 0 35rem;
 }
 .header_3 {
   font-size: 4rem;
   padding-top: 2rem;
   font-weight: bold;
 }
-.text_3{
+.text_3 {
   font-size: 3rem;
+}
+.section1 {
+  height: 70vh;
+  display: flex;
+}
+.section3 {
+  width: 20vw;
+  height: 10vh;
+  background-color: var(--color);
+  margin: 6em 6em 0 6em;
+  color: var(--color2);
+  text-align: center;
+}
+.text1 {
+  width: 20vw;
+  height: 40vh;
+  margin: 0 6em 6em 6em;
+  background-color: white;
+  color: var(--color);
+}
+.text1,
+.section3 {
+  box-shadow: gray 0 0 1rem;
+}
+.route {
+  padding-top: 1em;
+  width: 5rem;
+  height: 5rem;
 }
