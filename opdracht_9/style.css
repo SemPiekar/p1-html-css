@@ -13,11 +13,12 @@ html {
 body {
   color: white;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 
 /* Begin nav */
 .navbar {
-  width: 100%;
+  width: 100vw;
   background-color: var(--color);
   font-weight: bold;
   position: fixed;
@@ -46,9 +47,9 @@ li:first-child {
 .header {
   text-align: center;
   width: 100%;
-  padding-top: 5em;
+  padding-top: 3em;
   font-weight: bold;
-  font-size: xx-large;
+  font-size: 6rem;
 }
 .p {
   text-align: center;
@@ -63,7 +64,7 @@ li:first-child {
   color: white;
   height: 100vh;
 }
-button {
+.btn1 {
   padding: 2rem 6rem;
   margin-top: 5rem;
   font-size: 2rem;
@@ -76,27 +77,29 @@ button {
 }
 .new_york {
   background-image: url(/opdracht_9/img/new-york-page.png);
-  background-color: rgba(0, 0, 0, 0.2);
   background-size: contain;
+  background-color: gray;
   color: white;
   height: 100vh;
+  padding-left: 2rem;
 }
 .ny_header {
-  font-weight: 800;
+  font-weight: bold;
   color: var(--color2);
-  border-bottom: 0.8rem solid;
-  font-size: 6rem;
+ 
   padding-top: 2em;
 }
+.ny_h2 {
+  border-bottom: solid 1rem;
+  width: 40%;
+  font-size: 5rem;
+}
 .ny_text {
-  padding-top: 3em;
+  padding-top: 2em;
   color: var(--color2);
   font-size: 2.5rem;
 }
-.ny_text,
-.ny_header {
-  margin-left: 2em;
-}
+
 .section {
   height: 30vh;
   background-color: var(--color);
@@ -154,8 +157,59 @@ button {
 .all {
   display: flex;
   justify-content: space-around;
+  height: 70vh;
 }
 .last {
   background-image: url(/opdracht_9/img/contact-mountain.png);
   background-size: cover;
+  background-color: gray;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn2 {
+  width: 40vw;
+  height: 35vh;
+  border: solid;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  background: rgba(19, 28, 39, 0.5);
+  text-align: center;
+  border-width: 0;
+}
+footer {
+  background-color: var(--color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  height: 10vh;
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+}
+.footer_icons {
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  padding-right: 2rem;
+}
+.footer {
+  padding-left: 2rem;
+}
+.btn3 {
+  width: 100%;
+  margin-top: 3.5em;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+  height: 4rem;
+  background-color: var(--color1);
+  border-width: 0;
+}
+.input {
+  font-size: 2rem;
+}
+.name, .email {
+  margin-top: 5rem;
 }
