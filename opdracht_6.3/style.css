@@ -1,0 +1,14 @@
+nav ul {
+  display: flex;
+  justify-content: center;
+  border: solid 4px green;
+}
+nav ul li {
+  padding: 1rem 2rem 1rem 2rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+nav ul:first-child {
+  justify-content: left;
+  border: solid 4px red;
+}
