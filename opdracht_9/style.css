@@ -215,4 +215,24 @@ footer {
   margin-top: 5rem;
 }
 @media screen and (max-width: 932px) {
+  * {
+    font-size: 50%;
+  }
+  .new_york {
+    background-size: cover;
+  }
+  .header_3,
+  .text_3 {
+    width: 932px;
+  }
+  .all {
+    display: block;
+    width: 100vw;
+  }
+  .section3,
+  .text1 {
+    width: 80vw;
+    text-align: center;
+  }
+
 }
