@@ -1,216 +1,441 @@
 * {
-  margin: 0;
-  padding: 0;
-}
-:root {
-  --color: #131c27;
-  --color1: #4c6e97;
-  --color2: #ffffff;
-}
-html {
+  margin: 0rem;
+  padding: 0rem;
   font-size: 62.5%;
 }
+
 body {
-  color: white;
   font-family: "Poppins", sans-serif;
-  position: relative;
+  font-weight: 500;
 }
 
-/* Begin nav */
-.navbar {
+nav {
+  background-color: #131c27;
+  color: white;
   width: 100vw;
-  background-color: var(--color);
-  font-weight: bold;
   position: fixed;
-  top: 0;
-}
-ul {
-  list-style: none;
-  margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  height: 15vh;
+}
+
+nav div {
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
   align-items: center;
-  padding: 1em 0;
 }
-li a {
+
+nav ul {
+  width: 30vw;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0 1rem;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
-  color: var(--color3);
-  padding-right: 7.5em;
-  position: relative;
   font-size: 2rem;
 }
-li:first-child {
-  margin-right: auto;
-  margin-left: 3em;
+
+h1 {
   font-family: "Pattaya", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin: 1rem 0;
 }
-.header {
-  text-align: center;
-  width: 100%;
-  padding-top: 3em;
-  font-weight: bold;
-  font-size: 6rem;
+
+h2 {
+  font-size: 4.5rem;
+  margin: 2.5rem;
 }
-.p {
-  text-align: center;
-  width: 100%;
-  padding-top: 2em;
-  font-weight: bold;
-  font-size: x-large;
-}
-.landing_page {
-  background-image: url(/opdracht_9/img/landing-page.jpg);
+
+section {
+  background-color: #999999;
+  background-repeat: none;
+  background-position: center;
+  height: 100vh;
   background-size: cover;
-  color: white;
-  height: 100vh;
 }
-.btn1 {
-  padding: 2rem 6rem;
-  margin-top: 5rem;
+
+#tbl {
+  background-image: url(./img/landing-page.jpg);
+  background-blend-mode: multiply;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+article {
+  margin: 2.5rem;
+  font-weight: 300rem;
+  font-size: 4.5rem;
+}
+
+#tbl button {
+  padding: 2rem 6rem 2rem 6rem;
   font-size: 2rem;
-  background-color: var(--color1);
-  border: none;
-  color: var(--color2);
-}
-.btn {
-  text-align: center;
-}
-.new_york {
-  background-image: url(/opdracht_9/img/new-york-page.png);
-  background-size: contain;
-  background-color: gray;
+  background-color: #4c6e97;
   color: white;
-  height: 100vh;
-  padding-left: 2rem;
-}
-.ny_header {
-  font-weight: bold;
-  color: var(--color2);
-
-  padding-top: 2em;
-}
-.ny_h2 {
-  border-bottom: solid 1rem;
-  width: 40%;
-  font-size: 5rem;
-}
-.ny_text {
-  padding-top: 2em;
-  color: var(--color2);
-  font-size: 2.5rem;
+  border: 0 none white;
 }
 
-.section {
-  height: 30vh;
-  background-color: var(--color);
-}
-.header_3,
-.text_3 {
-  text-align: center;
-  padding: 1rem 35rem 0 35rem;
-}
-.header_3 {
+#First {
+  background-image: url(./img/new-york-page.png);
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  color: white;
   font-size: 4rem;
-  padding-top: 2rem;
-  font-weight: bold;
 }
-.text_3 {
-  font-size: 3rem;
+
+#First header {
+  margin-left: 3rem;
 }
-.section1 {
-  height: 70vh;
+
+#First h2 {
+  border-bottom: 0.6rem white solid;
+  width: fit-content;
+}
+
+#First article {
+  margin-left: 5rem;
+}
+
+#Second header {
+  background-color: #131c27;
+  color: white;
+  font-size: 4rem;
   display: flex;
-}
-.section3 {
-  width: 20vw;
-  height: 10vh;
-  background-color: var(--color);
-  margin: 6em 6em 0 6em;
-  color: var(--color2);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  padding-bottom: 3rem;
 }
-.text1 {
-  width: 20vw;
-  height: 40vh;
-  margin: 0 6em 6em 6em;
+
+#Second h2 {
+  font-size: 4rem;
+  padding-top: 1rem;
+}
+
+#Second {
+  height: 120vh;
   background-color: white;
-  color: var(--color);
+}
+
+#Second .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5rem 0rem 5rem 0rem;
+}
+
+.main section {
+  height: 60vh;
+  width: 35rem;
+  background-color: white;
+  box-shadow: 0.3rem 0.5rem 6rem grey;
+}
+
+.main article {
+  font-size: 3rem;
   text-align: center;
 }
-.text1,
-.section3 {
-  box-shadow: gray 0 0 1rem;
-}
-.route {
-  padding-top: 1em;
-  width: 5rem;
-  height: 5rem;
-}
-.header_travel {
+
+.main article h3 {
   font-size: 3rem;
-  padding-top: 2rem;
+  margin-bottom: 3rem;
 }
-.text_travel {
-  font-size: 2rem;
-  padding: 4rem 1rem 0 1rem;
+
+#Second img {
+  height: 5rem;
+  margin-top: 2rem;
 }
-.all {
-  display: flex;
-  justify-content: space-around;
-  height: 70vh;
-}
-.last {
-  background-image: url(/opdracht_9/img/contact-mountain.png);
-  background-size: cover;
-  background-color: gray;
-  height: 100vh;
+
+#Third {
+  background-image: url(./img/contact-mountain.png);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.btn2 {
-  width: 40vw;
-  height: 28vh;
-  border: solid;
-  border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem;
-  background: rgba(19, 28, 39, 0.5);
+
+#Third article {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 3rem;
+  color: white;
+  height: 50%;
+  width: 50%;
   text-align: center;
-  border-width: 0;
+  font-size: 6rem;
 }
+
+#Third article div {
+  margin-top: 5rem;
+}
+
+#Third button {
+  font-size: 2rem;
+  background-color: #4c6e97;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 5rem;
+  position: relative;
+  top: 5rem;
+  border: 0 none white;
+  border-radius: 0rem 0rem 3rem 3rem;
+}
+
 footer {
-  background-color: var(--color);
+  background-color: #131c27;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  font-size: 4rem;
+  align-items: center;
+}
+
+footer ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 2rem;
-  height: 10vh;
-  position: absolute;
-  width: 100vw;
-  bottom: 0;
-}
-.footer_icons {
-  display: flex;
-  justify-content: space-between;
   width: 50vw;
-  padding-right: 2rem;
+  list-style-type: none;
 }
-.footer {
-  padding-left: 2rem;
+
+.button:hover {
+  thirdrsor: pointer;
 }
-.btn3 {
-  width: 100%;
-  margin-top: 3.5em;
-  border-bottom-left-radius: 3em;
-  border-bottom-right-radius: 3em;
-  height: 4rem;
-  background-color: var(--color1);
-  border-width: 0;
+
+form input {
+  width: 20rem;
 }
-.input {
-  font-size: 2rem;
-}
-.name,
-.email {
-  margin-top: 5rem;
+
+@media screen and (max-width: 576px) {
+  nav {
+    background-color: #131c27;
+    color: white;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+  }
+
+  nav div {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav ul {
+    width: 30vw;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0 0rem;
+  }
+
+  nav li {
+    margin: 0 1rem;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-family: "Pattaya", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin: 2rem;
+  }
+
+  section {
+    background-color: #999999;
+    background-repeat: none;
+    background-position: center;
+    height: 150vh;
+    background-size: cover;
+  }
+
+  #tbl {
+    background-image: url(./img/landing-page.jpg);
+    background-blend-mode: multiply;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  article {
+    margin: 2rem;
+    font-weight: 300rem;
+    font-size: 3rem;
+    width: 60vw;
+  }
+
+  #tbl button {
+    padding: 2rem 6rem 2rem 6rem;
+    font-size: 2rem;
+    background-color: #4c6e97;
+    color: white;
+    border: 0 none white;
+    margin: 2rem;
+  }
+
+  #First {
+    background-image: url(./img/new-york-page.png);
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    color: white;
+    font-size: 4rem;
+  }
+
+  #First h2 {
+    font-size: 4rem;
+  }
+
+  #First article {
+    width: 70vw;
+  }
+
+  #Second header {
+    background-color: #131c27;
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  #Second h2 {
+    font-size: 4rem;
+    padding-top: 1rem;
+  }
+
+  #Second {
+    height: inherit;
+    background-color: white;
+  }
+
+  #Second header p {
+    width: 80vw;
+  }
+
+  #Second .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 7rem;
+  }
+
+  .main section {
+    height: 60vh;
+    width: 70vw;
+    background-color: white;
+    box-shadow: 0.3rem 0.5rem 6rem grey;
+    margin: 2rem;
+  }
+
+  .main article {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .main article h3 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  #Second img {
+    height: 5rem;
+    margin-top: 2rem;
+  }
+
+  #Third {
+    background-image: url(./img/contact-mountain.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Third article {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3rem;
+    color: white;
+    height: 50vh;
+    width: 75vw;
+    text-align: center;
+    font-size: 6rem;
+  }
+
+  #Third article div {
+    margin-top: 5rem;
+  }
+
+  #Third button {
+    font-size: 2rem;
+    background-color: #4c6e97;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    top: 5rem;
+    border: 0 none white;
+    border-radius: 0rem 0rem 3rem 3rem;
+  }
+
+  footer {
+    background-color: #131c27;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    font-size: 4rem;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    list-style-type: none;
+    margin-top: 2rem;
+  }
+
+  .button:hover {
+    thirdrsor: pointer;
+  }
+
+  form input {
+    width: 20rem;
+  }
 }
